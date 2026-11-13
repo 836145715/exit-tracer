@@ -1,0 +1,26 @@
+# Generated Android/Linux executables
+/exit-tracer
+/exit-tracer-ebpf
+*.exe
+*.dll
+*.so
+
+# Raw device captures and runtime state
+/runs/
+/daemon.log
+/daemon.pid
+/latest.txt
+/ebpf.ready
+/probe.out
+/probe.err
+*.log
+*.jsonl
+*.tombstone
+
+# IDE and local files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Keep ebpf/exit_bpfel.o: it is embedded by the Go loader.
